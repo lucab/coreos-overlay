@@ -36,6 +36,7 @@ RDEPEND="
 	sys-fs/e2fsprogs
 	sys-fs/mdadm
 	sys-fs/xfsprogs
+	coreos-base/cryptsetup-agent
 "
 
 RDEPEND+="${DEPEND}"
