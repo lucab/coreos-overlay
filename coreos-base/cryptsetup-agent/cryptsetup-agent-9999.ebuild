@@ -13,7 +13,7 @@ CROS_WORKON_REPO="git://gitlab.com"
 if [[ ${PV} == 9999 ]]; then
 	KEYWORDS="~amd64 ~arm64"
 else
-	CROS_WORKON_COMMIT="7d2c340c97212f47209e3dcc6d1a177a2578c3ed" # v0.1.0
+	CROS_WORKON_COMMIT="HEAD" # v0.1.0
 	KEYWORDS="amd64 arm64"
 fi
 
