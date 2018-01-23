@@ -8,11 +8,11 @@ inherit coreos-kernel
 DESCRIPTION="CoreOS Linux kernel"
 KEYWORDS="amd64 arm64"
 
-RDEPEND="=sys-kernel/coreos-modules-${PVR}"
+RDEPEND="=sys-kernel/coreos-modules-${PVR}
+        coreos-base/coreos-cryptagent"
 DEPEND="${RDEPEND}
 	app-arch/gzip
 	app-shells/bash
-	coreos/coreos-cryptagent
 	sys-apps/coreutils
 	sys-apps/findutils
 	sys-apps/grep
