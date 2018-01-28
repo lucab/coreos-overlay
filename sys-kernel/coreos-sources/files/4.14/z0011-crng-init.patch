@@ -1,0 +1,24 @@
+commit 067e8fe158cf7e0a35f3e443d534c261ebb24e27
+Author: Luca Bruno <lucab@debian.org>
+Date:   Sun Jan 28 22:41:58 2018 +0000
+
+    random: add crng_init to random procfs
+
+diff --git a/drivers/char/random.c b/drivers/char/random.c
+index 8ad92707e45f..ddec58d81233 100644
+--- a/drivers/char/random.c
++++ b/drivers/char/random.c
+@@ -2053,6 +2053,13 @@ struct ctl_table random_table[] = {
+ 		.mode		= 0444,
+ 		.proc_handler	= proc_do_uuid,
+ 	},
++	{
++		.procname	= "crng_init",
++		.data		= &crng_init,
++		.maxlen		= sizeof(int),
++		.mode		= 0444,
++		.proc_handler	= proc_dointvec,
++	},
+ #ifdef ADD_INTERRUPT_BENCH
+ 	{
+ 		.procname	= "add_interrupt_avg_cycles",

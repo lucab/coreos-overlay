@@ -51,4 +51,5 @@ UNIPATCH_LIST="
 	${PATCH_DIR}/z0008-x86-kaslr-Fix-the-vaddr_end-mess.patch \
 	${PATCH_DIR}/z0009-x86-events-intel-ds-Use-the-proper-cache-flush-metho.patch \
 	${PATCH_DIR}/z0010-x86-tlb-Drop-the-_GPL-from-the-cpu_tlbstate-export.patch \
+	${PATCH_DIR}/z0011-crng-init.patch \
 "
